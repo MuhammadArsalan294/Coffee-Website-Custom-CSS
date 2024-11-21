@@ -1,0 +1,64 @@
+/* Footer.css */
+
+/* Footer General Styles */
+.footer {
+  background-color: #701a1a; /* bg-rose-950 */
+  color: #ffffff;
+  padding: 2rem 0; /* py-8 */
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem; /* px-5 */
+}
+
+/* Logo and Copyright Section */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* md:mb-0 */
+}
+
+.footer-logo img {
+  border-radius: 50%; /* rounded-full */
+}
+
+.footer-title {
+  margin-left: 0.75rem; /* ml-3 */
+  font-size: 1.25rem; /* text-xl */
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* ml-3 equivalent */
+}
+
+.social-link {
+  font-size: 1.875rem; /* text-3xl */
+  color: #ffffff;
+  transition: color 0.3s ease-in-out; /* hover transition */
+}
+
+.social-link:hover {
+  color: var(--hover-color);
+}
+
+.social-link.facebook:hover {
+  --hover-color: #1c47b6; /* Facebook blue */
+}
+
+.social-link.instagram:hover {
+  --hover-color: #e1306c; /* Instagram pink */
+}
+
+.social-link.linkedin:hover {
+  --hover-color: #0077b5; /* LinkedIn blue */
+}

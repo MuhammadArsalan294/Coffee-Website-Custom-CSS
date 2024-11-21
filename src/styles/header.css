@@ -1,0 +1,58 @@
+/* Header.css */
+
+/* General Styles */
+.header {
+  background-color: #701a1a; /* Same as bg-rose-950 */
+  color: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Similar to shadow-md */
+  z-index: 50;
+}
+
+.header-container {
+  max-width: 1200px; /* Same as container */
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Section */
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header-logo img {
+  border-radius: 50%; /* Same as rounded-full */
+}
+
+.header-logo span {
+  margin-left: 1rem;
+  font-size: 1.25rem; /* Similar to text-xl */
+  font-weight: 600; /* Similar to font-semibold */
+  color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  margin-right: 1.25rem; /* Same as mr-5 */
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fbbf24; /* Similar to hover:text-yellow-600 */
+}
+

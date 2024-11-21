@@ -1,0 +1,97 @@
+/* Contact.css */
+
+/* Section Styles */
+.contact-section {
+  background-color: #701a1a; /* bg-rose-950 */
+  color: #f1f1f1;
+  padding: 6rem 1.25rem; /* py-24 px-5 */
+}
+
+.contact-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2rem; /* text-2xl */
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+@media (min-width: 640px) {
+  .contact-title {
+    font-size: 2.25rem; /* sm:text-3xl */
+  }
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* -m-2 spacing replaced with gap */
+}
+
+.contact-input-container {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .contact-input-container-half {
+    flex: 1 1 48%; /* Half width */
+    max-width: 48%;
+  }
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  background-color: rgba(229, 231, 235, 0.5); /* bg-gray-100 bg-opacity-50 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.5rem; /* rounded */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  font-size: 1rem; /* text-base */
+  color: #374151; /* text-gray-700 */
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  background-color: #ffffff;
+  border-color: #d97706; /* focus:border-yellow-700 */
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.5); /* focus:ring-2 focus:ring-yellow-300 */
+}
+
+.contact-textarea {
+  resize: none;
+  height: 8rem; /* h-32 */
+  line-height: 1.5; /* leading-6 */
+}
+
+.contact-submit {
+  display: inline-block;
+  background-color: #d97706; /* bg-yellow-700 */
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 2rem; /* py-2 px-8 */
+  border-radius: 0.5rem; /* rounded */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-submit:hover {
+  background-color: #b45309; /* hover:bg-yellow-800 */
+}

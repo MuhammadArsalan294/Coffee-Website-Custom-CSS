@@ -1,0 +1,69 @@
+/* About.css */
+
+/* Section Styles */
+.about-section {
+  background-color: #701a1a; /* Same as bg-rose-950 */
+  color: #ffffff;
+  padding: 6rem 1.25rem; /* px-5 py-24 */
+}
+
+.about-container {
+  max-width: 1200px; /* Similar to container */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Text Content */
+.about-content {
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .about-content {
+    text-align: left;
+    margin-right: 3rem; /* lg:pr-12 */
+  }
+}
+
+.about-title {
+  font-size: 2rem; /* text-3xl */
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .about-title {
+    font-size: 2.5rem; /* sm:text-4xl */
+  }
+}
+
+.about-description {
+  font-size: 1.125rem; /* text-xl */
+  line-height: 1.75;
+  color: #d1d5db; /* text-gray-300 */
+}
+
+/* Image Styles */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  object-fit: cover;
+  object-position: center;
+}
